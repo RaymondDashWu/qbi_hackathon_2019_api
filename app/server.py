@@ -34,7 +34,9 @@ async def download_file(url, dest):
 async def setup_learner():
     await download_file(export_file_url, path / export_file_name)
     try:
+        print("export_file_name", export_file_name)
         learn = load_learner(path, export_file_name)
+        print("learn", learn)
         return learn
     except RuntimeError as e:
         if len(e.args) > 0 and 'CPU-only machine' in e.args[0]:
