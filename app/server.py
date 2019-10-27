@@ -11,7 +11,7 @@ from starlette.staticfiles import StaticFiles
 
 from PIL import Image
 
-export_file_url = 'hhttps://www.dropbox.com/s/xqysigumu5ucujg/one_cycle.pth?dl=1'
+export_file_url = 'https://www.dropbox.com/s/xqysigumu5ucujg/one_cycle.pth?dl=1'
 export_file_name = 'one_cycle.pth'
 
 classes = ['black', 'grizzly', 'teddys']
